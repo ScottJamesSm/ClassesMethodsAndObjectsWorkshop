@@ -1,36 +1,46 @@
 package com.company;
 
-public class Cat{
+public class Cat extends Pet{
 
   String size;
-  String name;
+ // String name;
   boolean whiskers;
   boolean fur;
   int legs;
   double weight;
   String furColor;
 
-    public Cat(String name, int legs, double weight) {
-        this.name = name;
-        this.legs = legs;
+    public Cat(String ownerName, String petName, int age, char gender, String homeAddress, boolean fur, double weight) {
+        super(ownerName, petName, age, gender, homeAddress);
+        this.fur = fur;
         this.weight = weight;
     }
 
-    public String getSize() {
-        return size;
-    }
+   // public Cat(String ownerName, String petName, int age, char gender, String homeAddress) {
+   //     super(ownerName, petName, age, gender, homeAddress);
+   // }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
+    //  public Cat(String name, int legs, double weight) {
+//        this.name = name;
+//        this.legs = legs;
+//        this.weight = weight;
+//    }
+//
+//    public String getSize() {
+//        return size;
+//    }
+//
+//    public void setSize(String size) {
+//        this.size = size;
+//    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public boolean isWhiskers() {
         return whiskers;
